@@ -1184,11 +1184,11 @@ function AdminDashboard() {
   }, [queue]);
 
   return (
-    <div className="dark-theme" style={{ display: 'flex', minHeight: '100vh', backgroundColor: 'hsl(var(--background))', color: 'hsl(var(--foreground))' }}>
+    <div className="dark-theme admin-shell">
       
       {/* Sidebar Shell Layout */}
-      <aside className="glass" style={{ width: '260px', borderRadius: 0, borderRight: '1px solid hsl(var(--border) / 0.5)', display: 'flex', flexDirection: 'column', padding: '1.5rem 1rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '2.5rem' }}>
+      <aside className="glass admin-sidebar">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '1.5rem' }}>
           <div style={{ backgroundColor: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', padding: '0.4rem 0.8rem', borderRadius: '0.5rem', fontWeight: 800 }}>
             PIM
           </div>
@@ -1199,7 +1199,7 @@ function AdminDashboard() {
         </div>
 
         {/* Database & AI Status indicators */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
           <div style={{
             display: 'flex',
             alignItems: 'center',
@@ -1280,11 +1280,11 @@ function AdminDashboard() {
       </aside>
 
       {/* Main Panel Content */}
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', minWidth: 0 }}>
+      <div className="admin-main-panel" style={{ flex: 1, display: 'flex', flexDirection: 'column', minWidth: 0 }}>
         
         {/* Top Header */}
-        <header style={{ padding: '1.25rem 2rem', borderBottom: '1px solid hsl(var(--border) / 0.5)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <h2 style={{ fontSize: '1.5rem', fontFamily: 'var(--font-display)', fontWeight: 800 }}>
+        <header className="admin-header" style={{ borderBottom: '1px solid hsl(var(--border) / 0.5)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800 }}>
             {activeTab === 'dashboard' && 'Dashboard Overview'}
             {activeTab === 'importer' && 'Bulk Product Importer'}
             {activeTab === 'products' && 'Product catalog Management'}
@@ -1296,7 +1296,7 @@ function AdminDashboard() {
             {activeTab === 'profile' && 'Admin Account Profile'}
           </h2>
 
-          <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+          <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
             <button onClick={refreshAllData} className="btn btn-secondary" style={{ padding: '0.5rem 0.8rem', fontSize: '0.75rem' }}>
               <RefreshCw size={14} /> Sync Catalog
             </button>
@@ -1307,7 +1307,7 @@ function AdminDashboard() {
         </header>
 
         {/* Tab Content Renderer */}
-        <div style={{ padding: '2rem', overflowY: 'auto', flex: 1 }}>
+        <div className="admin-content" style={{ overflowY: 'auto', flex: 1 }}>
           
           {/* TAB 1: DASHBOARD */}
           {activeTab === 'dashboard' && (
