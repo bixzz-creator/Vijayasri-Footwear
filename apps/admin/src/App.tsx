@@ -43,7 +43,9 @@ import {
   Upload,
   User,
   FileText,
-  FolderSync
+  FolderSync,
+  Menu,
+  X
 } from 'lucide-react';
 import '@vijayasri/ui';
 
@@ -51,6 +53,7 @@ import '@vijayasri/ui';
 function AdminDashboard() {
   const { showToast } = useToast();
   const [activeTab, setActiveTab] = useState<'dashboard' | 'importer' | 'products' | 'brands' | 'leads' | 'logs' | 'settings' | 'studio' | 'profile'>('dashboard');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   // Connection / Keys State
   const [passcode, setPasscode] = useState('VijayaSriSecretPass');
@@ -1183,19 +1186,54 @@ function AdminDashboard() {
     return { total, completed, failed, pending, percent };
   }, [queue]);
 
+  const handleNavClick = (tab: typeof activeTab) => {
+    setActiveTab(tab);
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <div className="dark-theme admin-shell">
-      
-      {/* Sidebar Shell Layout */}
-      <aside className="glass admin-sidebar">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '1.5rem' }}>
-          <div style={{ backgroundColor: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', padding: '0.4rem 0.8rem', borderRadius: '0.5rem', fontWeight: 800 }}>
+
+      {/* Sleek Mobile Top Bar (Visible only on mobile <= 900px) */}
+      <div className="admin-mobile-topbar">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+          <div style={{ backgroundColor: '#FFFFFF', color: '#000000', padding: '0.35rem 0.65rem', borderRadius: '0.4rem', fontWeight: 900, fontSize: '0.8rem' }}>
             PIM
           </div>
           <div>
-            <h1 style={{ fontSize: '1.1rem', fontFamily: 'var(--font-display)', fontWeight: 800 }}>VSF STUDIO</h1>
-            <span style={{ fontSize: '0.65rem', color: 'hsl(var(--muted-foreground))', letterSpacing: '0.05em' }}>ADMIN PANEL</span>
+            <span style={{ fontSize: '0.95rem', fontWeight: 800, color: '#FFFFFF', letterSpacing: '0.02em', display: 'block', lineHeight: 1.1 }}>VSF STUDIO</span>
+            <span style={{ fontSize: '0.6rem', color: '#A1A1AA', letterSpacing: '0.08em', fontWeight: 700 }}>ADMIN PANEL</span>
           </div>
+        </div>
+
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="admin-mobile-menu-btn"
+          aria-label="Toggle Mobile Menu"
+        >
+          {isMobileMenuOpen ? <X size={20} color="#FFFFFF" /> : <Menu size={20} color="#FFFFFF" />}
+        </button>
+      </div>
+
+      {/* Sidebar Shell Layout (Desktop persistent, Mobile collapsible drawer) */}
+      <aside className={`glass admin-sidebar ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+            <div style={{ backgroundColor: '#FFFFFF', color: '#000000', padding: '0.4rem 0.8rem', borderRadius: '0.5rem', fontWeight: 900 }}>
+              PIM
+            </div>
+            <div>
+              <h1 style={{ fontSize: '1.1rem', fontFamily: 'var(--font-display)', fontWeight: 800, color: '#FFFFFF' }}>VSF STUDIO</h1>
+              <span style={{ fontSize: '0.65rem', color: '#A1A1AA', letterSpacing: '0.05em' }}>ADMIN PANEL</span>
+            </div>
+          </div>
+          <button
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="mobile-close-btn"
+            style={{ background: 'transparent', border: 'none', color: '#FFFFFF', cursor: 'pointer', display: 'none' }}
+          >
+            <X size={20} />
+          </button>
         </div>
 
         {/* Database & AI Status indicators */}
@@ -1206,10 +1244,11 @@ function AdminDashboard() {
             gap: '0.5rem',
             padding: '0.6rem 0.85rem',
             borderRadius: '0.5rem',
-            backgroundColor: dbMode === 'supabase' ? 'rgba(16, 185, 129, 0.1)' : 'rgba(245, 158, 11, 0.1)',
-            color: dbMode === 'supabase' ? 'rgb(16, 185, 129)' : 'rgb(245, 158, 11)',
+            backgroundColor: dbMode === 'supabase' ? 'rgba(16, 185, 129, 0.15)' : 'rgba(245, 158, 11, 0.15)',
+            color: dbMode === 'supabase' ? '#34D399' : '#FBBF24',
             fontSize: '0.75rem',
             fontWeight: 700,
+            border: '1px solid rgba(255, 255, 255, 0.1)',
           }}>
             {dbMode === 'supabase' ? <CheckCircle size={14} /> : <AlertTriangle size={14} />}
             <span>{dbMode === 'supabase' ? 'LIVE SUPABASE ACTIVE' : 'DEMO MODE (OFFLINE)'}</span>
@@ -1220,10 +1259,11 @@ function AdminDashboard() {
             gap: '0.5rem',
             padding: '0.6rem 0.85rem',
             borderRadius: '0.5rem',
-            backgroundColor: aiLiveConnected ? 'rgba(16, 185, 129, 0.1)' : hasAiApiKey ? 'rgba(197, 168, 128, 0.12)' : 'rgba(107, 114, 128, 0.12)',
-            color: aiLiveConnected ? 'rgb(16, 185, 129)' : hasAiApiKey ? 'hsl(var(--accent))' : 'rgb(107, 114, 128)',
+            backgroundColor: aiLiveConnected ? 'rgba(16, 185, 129, 0.15)' : hasAiApiKey ? 'rgba(197, 168, 128, 0.15)' : 'rgba(255, 255, 255, 0.08)',
+            color: aiLiveConnected ? '#34D399' : hasAiApiKey ? '#F3F4F6' : '#9CA3AF',
             fontSize: '0.75rem',
             fontWeight: 700,
+            border: '1px solid rgba(255, 255, 255, 0.1)',
           }}>
             {aiConnectionStatus === 'testing' ? <RefreshCw size={14} /> : aiLiveConnected ? <CheckCircle size={14} /> : <Sparkles size={14} />}
             <span>
@@ -1240,40 +1280,40 @@ function AdminDashboard() {
 
         {/* Nav Links */}
         <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', flex: 1 }}>
-          <button onClick={() => setActiveTab('dashboard')} className={`btn ${activeTab === 'dashboard' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
+          <button onClick={() => handleNavClick('dashboard')} className={`btn ${activeTab === 'dashboard' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
             <LayoutDashboard size={18} /> Dashboard
           </button>
 
-          <button onClick={() => setActiveTab('importer')} className={`btn ${activeTab === 'importer' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
-            <FolderInput size={18} /> Bulk Importer {queueStats.pending > 0 && <span style={{ backgroundColor: 'hsl(var(--primary))', color: 'black', padding: '0.1rem 0.4rem', borderRadius: '50%', fontSize: '0.65rem' }}>{queueStats.pending}</span>}
+          <button onClick={() => handleNavClick('importer')} className={`btn ${activeTab === 'importer' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
+            <FolderInput size={18} /> Bulk Importer {queueStats.pending > 0 && <span style={{ backgroundColor: '#FFFFFF', color: '#000000', padding: '0.1rem 0.4rem', borderRadius: '50%', fontSize: '0.65rem', fontWeight: 800 }}>{queueStats.pending}</span>}
           </button>
 
-          <button onClick={() => setActiveTab('studio')} className={`btn ${activeTab === 'studio' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
+          <button onClick={() => handleNavClick('studio')} className={`btn ${activeTab === 'studio' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
             <Sparkles size={18} /> AI Catalog Studio
           </button>
 
-          <button onClick={() => setActiveTab('products')} className={`btn ${activeTab === 'products' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
+          <button onClick={() => handleNavClick('products')} className={`btn ${activeTab === 'products' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
             <Database size={18} /> Catalog CRUD
           </button>
 
-          <button onClick={() => setActiveTab('brands')} className={`btn ${activeTab === 'brands' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
+          <button onClick={() => handleNavClick('brands')} className={`btn ${activeTab === 'brands' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
             <Tag size={18} /> Brand Registry
           </button>
 
-          <button onClick={() => setActiveTab('leads')} className={`btn ${activeTab === 'leads' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
-            <PhoneCall size={18} /> Leads CRM {stats.pendingLeads > 0 && <span style={{ backgroundColor: 'red', color: 'white', padding: '0.1rem 0.4rem', borderRadius: '50%', fontSize: '0.65rem' }}>{stats.pendingLeads}</span>}
+          <button onClick={() => handleNavClick('leads')} className={`btn ${activeTab === 'leads' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
+            <PhoneCall size={18} /> Leads CRM {stats.pendingLeads > 0 && <span style={{ backgroundColor: '#EF4444', color: 'white', padding: '0.1rem 0.4rem', borderRadius: '50%', fontSize: '0.65rem', fontWeight: 800 }}>{stats.pendingLeads}</span>}
           </button>
 
-          <button onClick={() => setActiveTab('logs')} className={`btn ${activeTab === 'logs' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
+          <button onClick={() => handleNavClick('logs')} className={`btn ${activeTab === 'logs' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
             <History size={18} /> Activity Logs
           </button>
         </nav>
 
-        <div style={{ borderTop: '1px solid hsl(var(--border) / 0.3)', margin: '1rem 0 0.5rem 0', paddingTop: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-          <button onClick={() => setActiveTab('settings')} className={`btn ${activeTab === 'settings' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
+        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.15)', margin: '1rem 0 0.5rem 0', paddingTop: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+          <button onClick={() => handleNavClick('settings')} className={`btn ${activeTab === 'settings' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
             <Settings size={18} /> Settings
           </button>
-          <button onClick={() => setActiveTab('profile')} className={`btn ${activeTab === 'profile' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
+          <button onClick={() => handleNavClick('profile')} className={`btn ${activeTab === 'profile' ? 'btn-primary' : 'btn-ghost'}`} style={{ justifyContent: 'flex-start' }}>
             <User size={18} /> Profile
           </button>
         </div>
@@ -1283,8 +1323,8 @@ function AdminDashboard() {
       <div className="admin-main-panel" style={{ flex: 1, display: 'flex', flexDirection: 'column', minWidth: 0 }}>
         
         {/* Top Header */}
-        <header className="admin-header" style={{ borderBottom: '1px solid hsl(var(--border) / 0.5)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800 }}>
+        <header className="admin-header" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, color: '#FFFFFF' }}>
             {activeTab === 'dashboard' && 'Dashboard Overview'}
             {activeTab === 'importer' && 'Bulk Product Importer'}
             {activeTab === 'products' && 'Product catalog Management'}
@@ -1297,12 +1337,9 @@ function AdminDashboard() {
           </h2>
 
           <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <button onClick={refreshAllData} className="btn btn-secondary" style={{ padding: '0.5rem 0.8rem', fontSize: '0.75rem' }}>
+            <button onClick={refreshAllData} className="btn btn-secondary" style={{ padding: '0.5rem 0.85rem', fontSize: '0.75rem', backgroundColor: '#FFFFFF', color: '#000000', fontWeight: 800, border: 'none' }}>
               <RefreshCw size={14} /> Sync Catalog
             </button>
-            <span style={{ fontSize: '0.8rem', color: 'hsl(var(--muted-foreground))' }}>
-              Time: {new Date().toLocaleTimeString()}
-            </span>
           </div>
         </header>
 
