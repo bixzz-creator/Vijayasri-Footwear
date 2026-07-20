@@ -355,7 +355,7 @@ export function HomeShowcase({
             </div>
           </a>
           <a
-            href="https://www.google.com/maps/place/VIJAYA+SRI+FOOTWEARS/@10.8955943,79.18823,17z/data=!3m1!4b1!4m6!3m5!1s0x3baac5f2003cb19b:0x49a3c69e00f6e82a!8m2!3d10.8955943!4d79.18823!16s%2Fg%2F11ddxl1ydm"
+            href="https://maps.app.goo.gl/sFiiKYZr3kuwnfHT6"
             target="_blank"
             rel="noopener noreferrer"
             className="vsf-trust-item"

@@ -62,7 +62,7 @@ export function StructuredData({ product, category, products = [] }: StructuredD
         "availableLanguage": ["en", "ta"]
       }
     ],
-    "hasMap": "https://www.google.com/maps/place/VIJAYA+SRI+FOOTWEARS/@10.8955943,79.18823,17z",
+    "hasMap": "https://maps.app.goo.gl/sFiiKYZr3kuwnfHT6",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",

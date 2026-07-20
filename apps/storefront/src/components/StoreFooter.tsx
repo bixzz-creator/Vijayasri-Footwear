@@ -135,7 +135,7 @@ export function StoreFooter({ onNavigate }: StoreFooterProps) {
           <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)', marginBottom: '0.75rem' }}>
             <iframe
               title="VijayaSri Footwear Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.123456789!2d79.18823!3d10.8955943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baac5f2003cb19b%3A0x49a3c69e00f6e82a!2sVIJAYA%20SRI%20FOOTWEARS!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.123!2d79.18823!3d10.8955943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baac5f2003cb19b%3A0x49a3c69e00f6e82a!2sVIJAYA%20SRI%20FOOTWEARS!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%"
               height="130"
               style={{ border: 0, display: 'block' }}
@@ -145,7 +145,7 @@ export function StoreFooter({ onNavigate }: StoreFooterProps) {
             />
           </div>
           <a
-            href="https://www.google.com/maps/place/VIJAYA+SRI+FOOTWEARS/@10.8955943,79.18823,17z/data=!3m1!4b1!4m6!3m5!1s0x3baac5f2003cb19b:0x49a3c69e00f6e82a!8m2!3d10.8955943!4d79.18823!16s%2Fg%2F11ddxl1ydm"
+            href="https://maps.app.goo.gl/sFiiKYZr3kuwnfHT6"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-secondary vsf-footer-map-btn"
@@ -157,7 +157,7 @@ export function StoreFooter({ onNavigate }: StoreFooterProps) {
 
       <div className="vsf-footer-bottom">
         <div className="container vsf-footer-bottom-inner">
-          <span>© {year} VijayaSri Footwear. Browse online — enquire via call or WhatsApp only.</span>
+          <span>© 2026 VijayaSri Footwear. All Rights Reserved. | Browse online — enquire via Call or WhatsApp.</span>
           <div className="vsf-footer-payments">
             <span>In-store UPI</span>
             <span>Card</span>
