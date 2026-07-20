@@ -1,4 +1,4 @@
-﻿/**
+/**
  * useSEO — Dynamic SEO hook for VijayaSri Footwear storefront.
  * Updates document.title, canonical, and all meta/OG tags reactively.
  */
@@ -22,7 +22,25 @@ function setMeta(name: string, content: string, property = false) {
   el.setAttribute("content", content);
 }
 
-function setCanonical(url: string) {
+export function normalizeCanonicalUrl(url: string): string {
+  try {
+    const parsed = new URL(url, BASE_URL);
+    let pathname = parsed.pathname;
+    if (pathname.length > 1 && pathname.endsWith('/')) {
+      pathname = pathname.slice(0, -1);
+    }
+    const params = new URLSearchParams(parsed.search);
+    const trackingKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'fbclid', 'gclid', 'msclkid', 'ref'];
+    trackingKeys.forEach(k => params.delete(k));
+    const queryString = params.toString();
+    return `${parsed.origin}${pathname}${queryString ? `?${queryString}` : ''}`;
+  } catch {
+    return url;
+  }
+}
+
+function setCanonical(rawUrl: string) {
+  const url = normalizeCanonicalUrl(rawUrl);
   let el = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
   if (!el) {
     el = document.createElement("link");

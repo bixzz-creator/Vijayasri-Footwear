@@ -1,0 +1,28 @@
+{
+  "short_name": "VijayaSri",
+  "name": "VijayaSri Footwear",
+  "description": "Browse slippers, sandals & shoes from top brands. Ayyampettai, Thanjavur showroom.",
+  "lang": "en-IN",
+  "categories": ["shopping", "lifestyle"],
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0f",
+  "theme_color": "#DC2626",
+  "prefer_related_applications": false
+}

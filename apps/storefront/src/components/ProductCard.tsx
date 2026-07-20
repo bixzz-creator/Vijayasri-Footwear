@@ -145,16 +145,21 @@ export function ProductCard({
             <img
               src={imageUrl}
               alt={alt}
+              title={alt}
+              width={400}
+              height={400}
               loading="lazy"
               decoding="async"
+              // @ts-ignore
+              fetchpriority="auto"
               onLoad={() => setImgLoaded(true)}
               onError={() => setImgError(true)}
               className={`product-img-progressive ${imgLoaded ? 'loaded' : 'loading'} ${hovered ? 'hovered' : ''}`}
-              style={{ contentVisibility: 'auto' }}
+              style={{ contentVisibility: 'auto', aspectRatio: '1/1' }}
             />
           ) : (
             <div className="nike-product-no-image brand-fallback">
-              <img src="/logo.png" alt="VijayaSri Footwear — Ayyempettai, Thanjavur" className="fallback-logo-img" loading="lazy" decoding="async" />
+              <img src="/logo.png" alt="VijayaSri Footwear — Ayyampettai, Thanjavur" width={200} height={200} className="fallback-logo-img" loading="lazy" decoding="async" />
               <span>VijayaSri Footwear</span>
             </div>
           )}

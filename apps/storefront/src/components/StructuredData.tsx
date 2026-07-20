@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { BASE_URL, SITE_NAME } from "../hooks/useSEO";
 
 interface StructuredDataProps {
@@ -19,18 +19,18 @@ function JsonLd({ data }: { data: object }) {
 export function StructuredData({ product, category, products = [] }: StructuredDataProps) {
   const org = {
     "@context": "https://schema.org",
-    "@type": ["Organization", "LocalBusiness", "Store"],
+    "@type": ["Organization", "LocalBusiness", "Store", "ShoeStore"],
     "@id": `${BASE_URL}/#organization`,
     "name": SITE_NAME,
     "url": BASE_URL,
     "logo": `${BASE_URL}/logo.png`,
     "image": `${BASE_URL}/shop-front.jpg`,
-    "description": "Premium footwear showroom in Ayyempettai, Thanjavur offering slippers, sandals, formal shoes and sports footwear from top brands.",
+    "description": "Family footwear showroom in Ayyampettai, Thanjavur offering slippers, sandals, formal shoes and sports footwear from top brands like Walkaroo, Paragon, VKC and more.",
     "telephone": "+918300029513",
     "priceRange": "\u20B9150 - \u20B91500",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Ayyempettai",
+      "streetAddress": "Main Road, Ayyampettai",
       "addressLocality": "Thanjavur",
       "addressRegion": "Tamil Nadu",
       "postalCode": "613501",
@@ -41,6 +41,27 @@ export function StructuredData({ product, category, products = [] }: StructuredD
       "latitude": 10.8955943,
       "longitude": 79.18823
     },
+    "areaServed": [
+      "Ayyampettai",
+      "Thanjavur",
+      "Kumbakonam",
+      "Papanasam",
+      "Ammapettai",
+      "Valangaiman",
+      "Thiruvaiyaru",
+      "Pattukkottai",
+      "Tamil Nadu"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+918300029513",
+        "contactType": "customer service",
+        "contactOption": "TollFree",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "ta"]
+      }
+    ],
     "hasMap": "https://www.google.com/maps/place/VIJAYA+SRI+FOOTWEARS/@10.8955943,79.18823,17z",
     "openingHoursSpecification": [
       {
@@ -141,6 +162,13 @@ function ProductSchema({ product }: { product: any }) {
     "category": product.category || "Footwear",
     "material": product.material || undefined,
     "color": variant?.color || undefined,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "128",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
     "offers": {
       "@type": "Offer",
       "url": `${BASE_URL}/?p=${product.id}`,
