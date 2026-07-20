@@ -182,3 +182,67 @@
     border-right-color: var(--border);
   }
 }
+
+/* 📱 Complete Admin Dashboard Mobile Responsiveness Rules */
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Main Container Layout Stacking */
+  .admin-layout, div[style*="display: flex"], div[style*="display: grid"] {
+    max-width: 100vw;
+  }
+
+  /* Admin Top Navbar */
+  header, nav, div[style*="justify-content: space-between"] {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  /* Table Horizontal Scrolling */
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Modals Touch & Mobile Optimization */
+  div[role="dialog"], div[style*="position: fixed"] > div {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+    padding: 1rem !important;
+    margin: 0.5rem auto !important;
+  }
+
+  /* Stat & KPI Cards */
+  .stat-grid, div[style*="grid-template-columns"], div[style*="gridTemplateColumns"] {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Button Rows & Filter Actions */
+  .action-bar, div[style*="display: flex"][style*="gap"] {
+    flex-wrap: wrap;
+  }
+
+  /* Inputs & Selects full touch area */
+  input, select, button, textarea {
+    font-size: 16px !important; /* Prevents iOS auto-zoom on input focus */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Ultra-compact mobile phone adjustments */
+  h1 { font-size: 1.4rem !important; }
+  h2 { font-size: 1.2rem !important; }
+  h3 { font-size: 1.05rem !important; }
+
+  button {
+    padding-inline: 0.75rem !important;
+  }
+}
