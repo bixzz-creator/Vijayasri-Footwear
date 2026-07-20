@@ -1,0 +1,340 @@
+{
+  "totalImages": 222,
+  "exactDupClustersCount": 3,
+  "perceptualClustersCount": 9,
+  "clusters": [
+    {
+      "clusterId": 1,
+      "compositeHash": "ff9fc7e3f0ff0000fedf5b290e80001c",
+      "sha256Hash": "f9f580c3810fd641b68aa9720b5c1e19c844b3316e05041d48cf1857471655a3",
+      "keep": {
+        "imageId": "1828c708-623b-42b3-a509-1b093a1fd0e5",
+        "variantId": "057bf789-707e-4bc7-8b3f-a3f55d585fff",
+        "productId": "90f3d819-7d83-4b92-92b4-e530f43a22a5",
+        "productName": "Walkaroo BX1256",
+        "productGender": "Men",
+        "productCategory": "Flip-Flops",
+        "productPrice": 250,
+        "color": "Tan",
+        "compositeHash": "ff9fc7e3f0ff0000fedf5b290e80001c",
+        "sha256Hash": "f9f580c3810fd641b68aa9720b5c1e19c844b3316e05041d48cf1857471655a3",
+        "sizeBytes": 65214,
+        "isPrimary": true,
+        "createdAt": "2026-07-13T15:08:19.147+00:00"
+      },
+      "deleteCandidates": [
+        {
+          "imageId": "f7ea3e2e-cbc0-49ef-9c60-3d5fbf4d8cd2",
+          "variantId": "b65d4199-24da-4a1b-93a7-258b2533c0f0",
+          "productId": "d6040548-db22-4eaa-9aa4-01ab5f1ae245",
+          "productName": "Walkaroo BX1256",
+          "productGender": "Men",
+          "productCategory": "Flip-Flops",
+          "productPrice": 250,
+          "color": "Tan",
+          "compositeHash": "ff9fc7e3f0ff0000fedf5b290e80001c",
+          "sha256Hash": "f9f580c3810fd641b68aa9720b5c1e19c844b3316e05041d48cf1857471655a3",
+          "sizeBytes": 65214,
+          "isPrimary": true,
+          "createdAt": "2026-07-13T15:08:20.57+00:00"
+        }
+      ]
+    },
+    {
+      "clusterId": 2,
+      "compositeHash": "ff9fc7e3f8ff0000fe4f3b144401001c",
+      "sha256Hash": "ca0c6ef87a9ac4c654a74e41980d8170124cd287f82ee110b7b4ae5d22ea77b6",
+      "keep": {
+        "imageId": "81944cf9-db05-4f59-84d0-aa34651f8bf0",
+        "variantId": "c7c175b2-779e-41bb-9d1b-730dcecc780e",
+        "productId": "c87164f7-f889-4e59-82fd-7ce7072b9c2f",
+        "productName": "Walkaroo BX2554",
+        "productGender": "Women",
+        "productCategory": "Casual Slippers",
+        "productPrice": 299,
+        "color": "Plum",
+        "compositeHash": "ff9fc7e3f8ff0000fe4f3b144401001c",
+        "sha256Hash": "ca0c6ef87a9ac4c654a74e41980d8170124cd287f82ee110b7b4ae5d22ea77b6",
+        "sizeBytes": 54039,
+        "isPrimary": true,
+        "createdAt": "2026-07-13T15:20:43.08+00:00"
+      },
+      "deleteCandidates": [
+        {
+          "imageId": "7c01a168-acf0-4d75-9e2e-74e0d902476b",
+          "variantId": "06f8b334-9c35-466b-9df2-51fbf31b0c6c",
+          "productId": "06b0dd0c-2a0c-406b-be50-b7914ad00db5",
+          "productName": "Walkaroo BX2554",
+          "productGender": "Women",
+          "productCategory": "Casual Slippers",
+          "productPrice": 299,
+          "color": "Plum",
+          "compositeHash": "ff9fc7e3f8ff0000fe4f3b144401001c",
+          "sha256Hash": "ca0c6ef87a9ac4c654a74e41980d8170124cd287f82ee110b7b4ae5d22ea77b6",
+          "sizeBytes": 54039,
+          "isPrimary": true,
+          "createdAt": "2026-07-13T15:20:44.495+00:00"
+        }
+      ]
+    },
+    {
+      "clusterId": 3,
+      "compositeHash": "df87cfebf8ff0000de876f250801001c",
+      "sha256Hash": "b1b14f245c94164f8a5ada9f4ee7a0be9f8328a6a5d1148e36f948140281106f",
+      "keep": {
+        "imageId": "b52da944-08f0-4464-90e0-440613c03811",
+        "variantId": "08065127-6e23-449a-86b3-60e467e84f1e",
+        "productId": "dc8c0a81-4d61-467c-ad06-94ad803e64a7",
+        "productName": "Walkaroo BX1967",
+        "productGender": "Men",
+        "productCategory": "Sandals",
+        "productPrice": 319,
+        "color": "Blue Orange",
+        "compositeHash": "df87cfebf8ff0000de876f250801001c",
+        "sha256Hash": "b1b14f245c94164f8a5ada9f4ee7a0be9f8328a6a5d1148e36f948140281106f",
+        "sizeBytes": 80751,
+        "isPrimary": true,
+        "createdAt": "2026-07-16T16:01:22.753+00:00"
+      },
+      "deleteCandidates": [
+        {
+          "imageId": "0a07eb3e-1bcd-4aa5-825c-daca88c951cf",
+          "variantId": "608d0d45-799a-428c-859c-9b70bdfcaee0",
+          "productId": "fba9196a-c0aa-42b8-87eb-d4e0c1cc4bff",
+          "productName": "Walkaroo BX1967",
+          "productGender": "Kids",
+          "productCategory": "Sandals",
+          "productPrice": 319,
+          "color": "Blue Orange",
+          "compositeHash": "df87cfebf8ff0000de876f250801001c",
+          "sha256Hash": "b1b14f245c94164f8a5ada9f4ee7a0be9f8328a6a5d1148e36f948140281106f",
+          "sizeBytes": 80751,
+          "isPrimary": true,
+          "createdAt": "2026-07-16T16:01:24.465+00:00"
+        }
+      ]
+    },
+    {
+      "clusterId": 4,
+      "compositeHash": "ff8f87e3f0ff0008ffa793330a050036",
+      "sha256Hash": "4438a12b61654de4ee656bbb120fe1b7e2ec3052c1f41ce987e2948b4e674170",
+      "keep": {
+        "imageId": "c936c329-9919-422e-b3cf-a77074a895c7",
+        "variantId": "69877a48-aed9-4c26-b47f-85fa482e6e89",
+        "productId": "dc98639f-e4a6-4e37-a723-a5e57a71efaa",
+        "productName": "Walkaroo 17146",
+        "productGender": "Men",
+        "productCategory": "Formal Shoes",
+        "productPrice": 719,
+        "color": "Black",
+        "compositeHash": "ff8f87e3f0ff0008ffa793330a050036",
+        "sha256Hash": "4438a12b61654de4ee656bbb120fe1b7e2ec3052c1f41ce987e2948b4e674170",
+        "sizeBytes": 52170,
+        "isPrimary": true,
+        "createdAt": "2026-07-16T16:58:32.271+00:00"
+      },
+      "deleteCandidates": [
+        {
+          "imageId": "8837b1b5-b7f7-42b6-bea3-34d8d437b172",
+          "variantId": "4eb0a232-82bc-4185-8e58-0243a6e6a91a",
+          "productId": "03995e95-44b8-4458-8782-cdd6b4452656",
+          "productName": "Walkaroo 17146",
+          "productGender": "Men",
+          "productCategory": "Formal Shoes",
+          "productPrice": 719,
+          "color": "Black",
+          "compositeHash": "ff8f87e3f0ff0008ffa793330a050036",
+          "sha256Hash": "100d1e6e7287d05b9c66888ac6c1516dcf594fb29d53f3bc54eee5caeb9be999",
+          "sizeBytes": 53070,
+          "isPrimary": true,
+          "createdAt": "2026-07-16T16:58:32.449+00:00"
+        }
+      ]
+    },
+    {
+      "clusterId": 5,
+      "compositeHash": "ff9f87e3f0ff0068fecfa73011000026",
+      "sha256Hash": "9ea16a58534ce6b03b00bb35ad4e815509ec9552ad20b09fb8ac0b5c2396e31f",
+      "keep": {
+        "imageId": "bf6d0b7f-3649-4368-b1b6-f5ad22236029",
+        "variantId": "7da0eec5-355e-40d4-8d6d-72489fa7454f",
+        "productId": "346297b5-6d2d-47b0-adf4-fcd6ceb9e997",
+        "productName": "Walkaroo WF6255",
+        "productGender": "Men",
+        "productCategory": "Casual Slippers",
+        "productPrice": 829,
+        "color": "Tan",
+        "compositeHash": "ff9f87e3f0ff0068fecfa73011000026",
+        "sha256Hash": "9ea16a58534ce6b03b00bb35ad4e815509ec9552ad20b09fb8ac0b5c2396e31f",
+        "sizeBytes": 60612,
+        "isPrimary": true,
+        "createdAt": "2026-07-16T17:07:28.189+00:00"
+      },
+      "deleteCandidates": [
+        {
+          "imageId": "bf097a10-6215-4b79-892c-9323bf709207",
+          "variantId": "5feeeca2-5dad-4dfc-9ef0-27d995e33253",
+          "productId": "81330ea7-db7d-4f41-b80d-bcbc5c19cab4",
+          "productName": "Walkaroo WF6255",
+          "productGender": "Men",
+          "productCategory": "Casual Slippers",
+          "productPrice": 829,
+          "color": "Tan",
+          "compositeHash": "ff9f87e3f0ff0068fecfa73011000026",
+          "sha256Hash": "fc551f86ae858b06ca21f56c23a2f9de26ad83492a8b60393d806fc4e2b93c18",
+          "sizeBytes": 61572,
+          "isPrimary": true,
+          "createdAt": "2026-07-16T17:07:29.858+00:00"
+        }
+      ]
+    },
+    {
+      "clusterId": 6,
+      "compositeHash": "99ffe3c9c9cbffff82043364a4740a00",
+      "sha256Hash": "c39f4494698dd6a256c25d635d52345ebd0f9198559e8eb65636600ec0449856",
+      "keep": {
+        "imageId": "e8201156-9e3a-4456-bb83-4b24f7e2dfbd",
+        "variantId": "23daef89-a69c-41f5-b4cf-76df45b0b6c2",
+        "productId": "4d16f4bc-e6ed-40bf-b6a4-0e4beec771ca",
+        "productName": "Walkaroo WGP53440",
+        "productGender": "Men",
+        "productCategory": "Casual Slippers",
+        "productPrice": 519,
+        "color": "Camel",
+        "compositeHash": "99ffe3c9c9cbffff82043364a4740a00",
+        "sha256Hash": "c39f4494698dd6a256c25d635d52345ebd0f9198559e8eb65636600ec0449856",
+        "sizeBytes": 43623,
+        "isPrimary": true,
+        "createdAt": "2026-07-16T17:09:09.573+00:00"
+      },
+      "deleteCandidates": [
+        {
+          "imageId": "2dede40a-cbef-41a0-822e-cbbe990436f4",
+          "variantId": "a93045b0-c547-47c2-a039-31082ea53061",
+          "productId": "c9392cde-c560-425b-b48d-92a069193b4a",
+          "productName": "Walkaroo WGP53440",
+          "productGender": "Men",
+          "productCategory": "Casual Slippers",
+          "productPrice": 519,
+          "color": "Camel",
+          "compositeHash": "99ffe3c9c9cbffff82043364a4740a00",
+          "sha256Hash": "f69a6b26ade3c3435a99b18c1c6bbb020e1fd2015476d061e0c7d6b569896856",
+          "sizeBytes": 43407,
+          "isPrimary": true,
+          "createdAt": "2026-07-16T17:09:09.629+00:00"
+        }
+      ]
+    },
+    {
+      "clusterId": 7,
+      "compositeHash": "ff97cfe3f8ff0008fed727144c010036",
+      "sha256Hash": "a5fd8460576fd86941ff959ea9b36929ad917e45017a5c69597b1d9b34f28c1f",
+      "keep": {
+        "imageId": "9d77b6d2-1910-4c92-af51-29579ca41cd3",
+        "variantId": "2f5563e9-fe53-4665-b1c0-cae9ebf1c1d4",
+        "productId": "b42cea38-91bf-4ea7-8f31-8ad5ba01dae2",
+        "productName": "Walkaroo WL7673",
+        "productGender": "Women",
+        "productCategory": "Sandals",
+        "productPrice": 299,
+        "color": "Maroon",
+        "compositeHash": "ff97cfe3f8ff0008fed727144c010036",
+        "sha256Hash": "a5fd8460576fd86941ff959ea9b36929ad917e45017a5c69597b1d9b34f28c1f",
+        "sizeBytes": 59835,
+        "isPrimary": true,
+        "createdAt": "2026-07-16T17:10:06.41+00:00"
+      },
+      "deleteCandidates": [
+        {
+          "imageId": "d159cca9-129f-4f79-b757-775b3adaf09f",
+          "variantId": "d2b371d4-6f82-4be5-b9e6-8360be3600d5",
+          "productId": "199377d2-3bec-40fa-9e27-395e8b057376",
+          "productName": "Walkaroo WL7673",
+          "productGender": "Women",
+          "productCategory": "Sandals",
+          "productPrice": 299,
+          "color": "Maroon",
+          "compositeHash": "ff97cfe3f8ff0008fed727144c010036",
+          "sha256Hash": "6d413c68632b448538dae3b59ec175c84052f6964faafb118b39d3bb4518093b",
+          "sizeBytes": 61323,
+          "isPrimary": true,
+          "createdAt": "2026-07-16T17:10:07.432+00:00"
+        }
+      ]
+    },
+    {
+      "clusterId": 8,
+      "compositeHash": "ff87cfe3f8ff0008fe97672c4c410036",
+      "sha256Hash": "2ec506a33af9221cc4a8b7f8bad6fc28b075a00bdee072670fa8fc4a3fb6070e",
+      "keep": {
+        "imageId": "32aca280-a4d0-4e85-9d14-73e3067de6e1",
+        "variantId": "b8c38b4c-3047-40ae-8349-a06970f7a64b",
+        "productId": "8b8f9c8f-7705-4986-87e9-f24facdf02e8",
+        "productName": "Walkaroo WLR72017",
+        "productGender": "Women",
+        "productCategory": "Sandals",
+        "productPrice": 259,
+        "color": "Polyurethane",
+        "compositeHash": "ff87cfe3f8ff0008fe97672c4c410036",
+        "sha256Hash": "2ec506a33af9221cc4a8b7f8bad6fc28b075a00bdee072670fa8fc4a3fb6070e",
+        "sizeBytes": 57171,
+        "isPrimary": true,
+        "createdAt": "2026-07-16T17:15:09.702+00:00"
+      },
+      "deleteCandidates": [
+        {
+          "imageId": "cacfc21b-d609-4321-833c-f41a389f1e03",
+          "variantId": "822703cb-8529-43e4-b9c0-f45a1f8af3de",
+          "productId": "3fd1de1e-218e-4f56-8873-51de22b8b6a0",
+          "productName": "Walkaroo WLR72017",
+          "productGender": "Women",
+          "productCategory": "Sandals",
+          "productPrice": 269,
+          "color": "Polyurethane",
+          "compositeHash": "ff87cfe3f8ff0008fe97672c4c410036",
+          "sha256Hash": "9be4b68bfb9baa00af76f993927d96caee62fe714e1d54eaa9714001ffdde24a",
+          "sizeBytes": 57108,
+          "isPrimary": true,
+          "createdAt": "2026-07-16T17:15:10.092+00:00"
+        }
+      ]
+    },
+    {
+      "clusterId": 9,
+      "compositeHash": "ff9fefebf0ff0008fe9f433448010036",
+      "sha256Hash": "43eb01e1c8f078f443e7f55f24c753a01d485f16da7e4b5de6e7eff04262f0ba",
+      "keep": {
+        "imageId": "bd3477b1-6627-49ee-b6e5-e5a57b30ac64",
+        "variantId": "270935dd-e1b5-4971-972c-39eeb49ea5c3",
+        "productId": "1ce6e534-7f1f-46b5-ab77-785378c74aba",
+        "productName": "Walkaroo WLR72042",
+        "productGender": "Women",
+        "productCategory": "Sandals",
+        "productPrice": 329,
+        "color": "Sand",
+        "compositeHash": "ff9fefebf0ff0008fe9f433448010036",
+        "sha256Hash": "43eb01e1c8f078f443e7f55f24c753a01d485f16da7e4b5de6e7eff04262f0ba",
+        "sizeBytes": 61326,
+        "isPrimary": true,
+        "createdAt": "2026-07-16T17:15:19.271+00:00"
+      },
+      "deleteCandidates": [
+        {
+          "imageId": "a8241118-6d6a-40aa-b85b-8d9dda1408a2",
+          "variantId": "b984fee7-0eaf-4dcf-82d3-05c7adf61add",
+          "productId": "2a37c7f8-dcd7-429b-b156-461d30a1b39f",
+          "productName": "Walkaroo WLR72042",
+          "productGender": "Women",
+          "productCategory": "Sandals",
+          "productPrice": 329,
+          "color": "Sand",
+          "compositeHash": "ff9fefebf0ff0008fe9f433448010036",
+          "sha256Hash": "b75ca32c6d81733e3475684524e4f6e1aa7e7084bdb2e5289a768a7d524c067a",
+          "sizeBytes": 60117,
+          "isPrimary": true,
+          "createdAt": "2026-07-16T17:15:21.231+00:00"
+        }
+      ]
+    }
+  ]
+}

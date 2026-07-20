@@ -1,0 +1,12 @@
+# Safe to Delete — Exact Duplicates (already imported)
+# Run scripts/delete-confirmed-duplicates.mjs to delete these
+# ONLY files that appear in rename-manifest.csv are included
+
+D:\VijayaSri Footwear\sleppers\Walkaroo_Unknown_Tan_439_2.jpeg
+D:\VijayaSri Footwear\sleppers\Walkaroo_WC4865_Peach_299_2.jpeg
+D:\VijayaSri Footwear\sleppers\Walkaroo_WF6255_Tan_829_2.jpeg
+D:\VijayaSri Footwear\sleppers\Walkaroo_WF6258_Brown_799_3.jpeg
+D:\VijayaSri Footwear\sleppers\Walkaroo_WGP53410_Tan_479_2.jpeg
+D:\VijayaSri Footwear\sleppers\Walkaroo_WGP53410_Tan_479_4.jpeg
+D:\VijayaSri Footwear\sleppers\Walkaroo_WLR71215_Beige_299_2.jpeg
+D:\VijayaSri Footwear\sleppers\Walkaroo_WLR71215_Beige_299_4.jpeg

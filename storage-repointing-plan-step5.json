@@ -1,0 +1,784 @@
+{
+  "totalListed": 104,
+  "matchedCount": 89,
+  "notFoundCount": 15,
+  "repointCount": 0,
+  "outrightDeleteCount": 89,
+  "repointingPlan": [],
+  "outrightDeleteList": [
+    {
+      "deleteFilename": "Walkaroo_Unknown_Black_719_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "b3946e53-9e7c-4d11-bb76-30edb4fcd097",
+      "deleteProductName": "Walkaroo",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR72017_PLUM_269.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "78ca2481-0454-4878-a7ee-3ecd2d270c5a",
+      "deleteProductName": "Walkaroo WLR72017",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_PLUM_259.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "fe7087b6-0be9-48dc-a23c-88bd96f14a0b",
+      "deleteProductName": "Walkaroo WLR72017",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W5687_Brown_379.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "f3e490cf-6b38-4354-99b0-f39760980d22",
+      "deleteProductName": "Walkaroo W5687",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W5687_Brown_309_3.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "fdef1dc6-2252-4889-bd6a-fa56f8154fd4",
+      "deleteProductName": "Walkaroo W5687",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W5687_Tan_379.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "50c399e6-a613-4c60-a868-1c5dd036c1d6",
+      "deleteProductName": "Walkaroo W5687",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W5687_VATKAROO_309.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "00430d7c-1ba9-4495-9a27-facff80d3b08",
+      "deleteProductName": "Walkaroo W5687",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WE1347_Olive_749_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "e861fdff-22a4-4b62-85a5-924cbaa1df51",
+      "deleteProductName": "Walkaroo WE1347",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WE1347_MARGIN_749_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "d886ee68-a29c-4389-9a23-f2ecc9d86d38",
+      "deleteProductName": "Walkaroo WE1347",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W102_Black_299.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "e0deea44-f76a-42c1-960f-83a2f17ef4c2",
+      "deleteProductName": "Walkaroo W102",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W102_Black_264_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "e0deea44-f76a-42c1-960f-83a2f17ef4c2",
+      "deleteProductName": "Walkaroo W102",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BASIX_BX2554_PLUM_A_299.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "c87164f7-f889-4e59-82fd-7ce7072b9c2f",
+      "deleteProductName": "Walkaroo BX2554",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2255_Blue_184_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "885cab4b-1c78-4bc5-9c5a-15d043a7cb8f",
+      "deleteProductName": "Walkaroo BX2255",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2255_Brown_184_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "885cab4b-1c78-4bc5-9c5a-15d043a7cb8f",
+      "deleteProductName": "Walkaroo BX2255",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2255_Standard_184.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "57017bd1-5298-4193-b41e-f7da86fdec53",
+      "deleteProductName": "Walkaroo BX2255",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2554_Blue_299_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "c87164f7-f889-4e59-82fd-7ce7072b9c2f",
+      "deleteProductName": "Walkaroo BX2554",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2554_Burgundy_299_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "c87164f7-f889-4e59-82fd-7ce7072b9c2f",
+      "deleteProductName": "Walkaroo BX2554",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2554_Maroon_299_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "c87164f7-f889-4e59-82fd-7ce7072b9c2f",
+      "deleteProductName": "Walkaroo BX2554",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2650_Blue_239_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "a2536ab5-9537-4b3d-9ac6-09dd29de27db",
+      "deleteProductName": "Walkaroo BX2650",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2669_Standard_259.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "4c539b9a-938f-42cf-a2ec-e3f8573f82ed",
+      "deleteProductName": "Walkaroo BX2669",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2672_Blue_264_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "cf50808e-a5a3-417b-910c-16c507045d78",
+      "deleteProductName": "Walkaroo BX2672",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_FLR43110_Beige_329_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "6f4e3f7a-ada7-4f4d-83c1-34ccd115a628",
+      "deleteProductName": "Walkaroo FLR43110",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Black_719_4.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "dc98639f-e4a6-4e37-a723-a5e57a71efaa",
+      "deleteProductName": "Walkaroo 17146",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Tan_439.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "5f3e04c5-f0a7-4927-8048-cfb3ac3f57b0",
+      "deleteProductName": "Walkaroo WE8821",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W172_Brown_279_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "16f07982-4447-424a-9f67-fffd7730902f",
+      "deleteProductName": "Walkaroo W172",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W187_Blue_189_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "d64f54c9-6262-45e1-b58b-f7d94a7e526d",
+      "deleteProductName": "Walkaroo W187",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W187_Pink_189_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "d64f54c9-6262-45e1-b58b-f7d94a7e526d",
+      "deleteProductName": "Walkaroo W187",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W27138_Standard_269.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "e35c4670-fefb-4229-b6d8-e8d1fc20ff8b",
+      "deleteProductName": "Walkaroo W27138",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W5687_Black_309_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "5e55b9a8-358c-4c80-a290-a54ff450dcc6",
+      "deleteProductName": "Walkaroo W5687",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W5687_Green_309_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "7a943d63-fb33-485a-932a-bbe74f7bd79d",
+      "deleteProductName": "Walkaroo W5687",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WC4823_Grey_289_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "fe754bdc-8673-4c7d-a5bb-4aec4eb423b2",
+      "deleteProductName": "Walkaroo WC4823",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WC4829_White_359_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "e45c676c-042e-4537-ac8f-ec4958c54ff2",
+      "deleteProductName": "Walkaroo WC4829",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WC4843_BS_J_A_314.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "bac1f850-6316-48a6-a3f6-90025afd6961",
+      "deleteProductName": "Walkaroo WC4843",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WC4843_Grey_314_3.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "a5a52003-1935-46b7-b45b-a42c4064bf34",
+      "deleteProductName": "Walkaroo WC4843",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WC8737_Grey_299_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "a729c5e9-7fe2-4b6e-a83b-ad51e123caae",
+      "deleteProductName": "Walkaroo WC8737",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WC8800_White_269_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "c974a71d-d27e-46b6-99e5-8f53e3963fc1",
+      "deleteProductName": "Walkaroo WC8800",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WC8819_Tan_279_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "1f5ab757-55dc-4447-9d88-dcd6bbdbfb0c",
+      "deleteProductName": "Walkaroo WC8819",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WE1020_RETAIL_629.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "a1ded6ab-1454-4afb-9cdb-eeca5883ba52",
+      "deleteProductName": "Walkaroo WE1020",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WE1335_Black_599_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "606125fb-5d72-45a3-874f-30228c163a00",
+      "deleteProductName": "Walkaroo WE1335",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WEI335_RETAIL_599.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "34ef407d-9c2a-4a2e-bbdf-e8c754c0e1a2",
+      "deleteProductName": "Walkaroo WE1335",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WEI356_Brown_719.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "1f159815-6c7b-4a2c-a4a8-e2a0e5d5b3de",
+      "deleteProductName": "Walkaroo WE1356",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WF6255_TW_PR_829.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "346297b5-6d2d-47b0-adf4-fcd6ceb9e997",
+      "deleteProductName": "Walkaroo WF6255",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WF6258_Brown_799_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "26d08c3a-a6fb-4fd2-ba71-711dd6da11b6",
+      "deleteProductName": "Walkaroo",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGP53032_LLE_799.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "19625b21-cb9a-46f3-85a5-4d9eaf92767f",
+      "deleteProductName": "Walkaroo WGP53032",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGP53032_TS_EA_AN_OY_G_799.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "6fd186f1-7e7e-4ee8-b348-60a3aff61cac",
+      "deleteProductName": "Walkaroo WGP53032",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGP53320_BACKBEGE_EE_479.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "b32ff2f9-bcbc-43cb-a897-042fcb703a23",
+      "deleteProductName": "Walkaroo WGP53320",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGP53408_Blue_469_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "57ecf0aa-f2ef-40fc-96c4-b4bbc9b06fd4",
+      "deleteProductName": "Walkaroo WGP53408",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGP53440_NIAED_VV_519.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "4d16f4bc-e6ed-40bf-b6a4-0e4beec771ca",
+      "deleteProductName": "Walkaroo WGP53440",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGP5345_Blue_259_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "311de2bf-1dda-494a-93db-69990bb044ab",
+      "deleteProductName": "Walkaroo WGP53451",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGR53351_Olive_539_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "625c13ec-3541-46eb-9e93-fbcde2994ef7",
+      "deleteProductName": "Walkaroo WGR53351",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGR53387_NUAL_TONE_NL_429.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "7245771e-bccf-4f37-9fdc-19daf0811529",
+      "deleteProductName": "Walkaroo WGR53387",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WL7554_Olive_379_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "7414eb02-b4f0-4a72-8739-f8d495499888",
+      "deleteProductName": "Walkaroo WL7554",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WL7800_Black_319_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "1b03ffb4-e959-447a-b8a5-77b3a4f7d1dc",
+      "deleteProductName": "Walkaroo WL7800",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WL7900_French_Beige_359_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "9fa66ced-0141-44a0-8b4d-1b55138bd08f",
+      "deleteProductName": "Walkaroo WL7900",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WL7900_Purple_359_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "91217e1a-f61c-44cc-81f0-e683c8aff93c",
+      "deleteProductName": "Walkaroo WL7900",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WL981_MOONBLE_279.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "18439e47-2247-4bb4-84bd-bdc2fb88b01a",
+      "deleteProductName": "Walkaroo WL981",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLP72034_Standard_349_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "c08246bb-3791-4175-8931-496029268353",
+      "deleteProductName": "Walkaroo WLP72034",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLP78050_Olive_499.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "f4f27a27-62f2-43a5-b11f-6b074a8e463b",
+      "deleteProductName": "Walkaroo WLP74050",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLP78012_Black_499.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "0570c531-bf1d-4202-85ae-5a63141bd809",
+      "deleteProductName": "Walkaroo WLP78012",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR71215_Beige_299_3.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "26da3273-fb8a-4738-8e86-f9afa1899a3c",
+      "deleteProductName": "Walkaroo",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR72017_Brown_269_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "15687c11-8351-4339-8a47-15f57a3647ff",
+      "deleteProductName": "Walkaroo WLR72017",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR72077_Black_359_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "b11e72ea-105a-43d4-8c3a-2e3d8abf2657",
+      "deleteProductName": "Walkaroo WLR72077",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR73022_Black_279_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "85a51ba8-86ce-4a25-8408-29bd78550b4c",
+      "deleteProductName": "Walkaroo WLR73022",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR73022_Blue_279_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "9aa23bd1-30bb-4680-aa77-70fc5678dbf2",
+      "deleteProductName": "Walkaroo WLR73022",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR74018_CUSHION_SH_IS_309.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "853f2a52-a308-4061-ac33-d9acfb7be4db",
+      "deleteProductName": "Walkaroo WLR74018",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR77012_Brown_359_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "4242c92c-38ed-4127-a57e-a71b0ef2aace",
+      "deleteProductName": "Walkaroo WLR77012",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR77023_Green_299_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "59dec74e-667d-4b37-aac5-630ef435efab",
+      "deleteProductName": "Walkaroo WLR77023",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BASIX_BX2672_Brown_269.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "cf50808e-a5a3-417b-910c-16c507045d78",
+      "deleteProductName": "Walkaroo BX2672",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2255_Grey_184_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "885cab4b-1c78-4bc5-9c5a-15d043a7cb8f",
+      "deleteProductName": "Walkaroo BX2255",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BX2554_Black_299_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "c87164f7-f889-4e59-82fd-7ce7072b9c2f",
+      "deleteProductName": "Walkaroo BX2554",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Tan_739_3.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "75fb407f-9375-4cc9-b4d2-a0b18463ec1d",
+      "deleteProductName": "Walkaroo WGP53052",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_W5687_Brown_309_4.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "a024cae9-4a34-47f8-9b83-43e081108ac8",
+      "deleteProductName": "Walkaroo W5687",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WC4865_Peach_299_3.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "4ffa1bc6-4dd0-4302-98c3-6495493cfecf",
+      "deleteProductName": "Walkaroo WC4865",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WE1020_Black_629.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "aca52731-5d31-4d8a-855b-54d1649a255a",
+      "deleteProductName": "Walkaroo WE1020",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WE2023_SOLE_J_499.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "3664faed-4941-4261-9a10-ffc7c138547c",
+      "deleteProductName": "Walkaroo WE2023",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WE2349_Olive_379_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "6d78ec7c-8868-4410-b8a0-bcb7e6409efa",
+      "deleteProductName": "Walkaroo WE2349",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WE2349_Purple_379_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "c716d562-9202-46c5-8638-e1686e0abfe1",
+      "deleteProductName": "Walkaroo WE2349",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGP53320_WE_CN_479.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "2dc05f0a-bcfd-4393-b863-0754e2390230",
+      "deleteProductName": "Walkaroo WGP53320",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGP53440_Camel_519_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "4d16f4bc-e6ed-40bf-b6a4-0e4beec771ca",
+      "deleteProductName": "Walkaroo WGP53440",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WL7132_SOLE_EA_GE_264.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "20495afe-619b-4c91-99e1-a4c22cdb67aa",
+      "deleteProductName": "Walkaroo WL7132",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WL7554_Purple_379_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "685b2d5d-a41f-4623-8854-73f41e937b6c",
+      "deleteProductName": "Walkaroo WL7554",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WL7673_Standard_299.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "b42cea38-91bf-4ea7-8f31-8ad5ba01dae2",
+      "deleteProductName": "Walkaroo WL7673",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLP70418_Rose_329_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "50401ca5-dbe8-4403-8fcd-2735f69fc584",
+      "deleteProductName": "Walkaroo WLP70418",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLP72034_Blue_349_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "f4102781-8a17-4119-b739-2c8f0f5a7445",
+      "deleteProductName": "Walkaroo WLP72034",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR72042_Sand_329_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "1ce6e534-7f1f-46b5-ab77-785378c74aba",
+      "deleteProductName": "Walkaroo WLR72042",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR77012_Olive_359_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "f13abbe6-b2a8-4bca-9c64-8905560d5b13",
+      "deleteProductName": "Walkaroo WLR77012",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_WLR79400_CUSHION_A_I_270.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "beeaa8bc-621d-4957-a335-e5da70bd85cd",
+      "deleteProductName": "Walkaroo WLR79400",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Tan_739_2.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "0ee63b4b-1d1b-41ab-95c6-3ed63bb31424",
+      "deleteProductName": "Walkaroo",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    },
+    {
+      "deleteFilename": "Walkaroo_BASIX_BX1256_Tan_249.jpeg",
+      "keepFilename": "N/A",
+      "deleteProductId": "90f3d819-7d83-4b92-92b4-e530f43a22a5",
+      "deleteProductName": "Walkaroo BX1256",
+      "action": "DELETE_OUTRIGHT",
+      "reason": "Unreferenced duplicate image/product entry in Supabase; safe to remove outright."
+    }
+  ],
+  "absentItems": [
+    {
+      "deleteFilename": "Walkaroo_Unknown_Black_679_9.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Black_719_3.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_PLUM_269.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Black_679_7.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Black_679_10.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Black_679_6.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Khaki_339.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Khaki_439_2.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Tan_289.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_VATKAVOO_379.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_BASIX_BX2675_Maroon_229_2.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Black_439_2.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Black_679_8.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_WGP53410_Tan_479_3.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    },
+    {
+      "deleteFilename": "Walkaroo_Unknown_Olive_479.jpeg",
+      "reason": "Absent from Supabase (never imported or already cleaned up)."
+    }
+  ]
+}

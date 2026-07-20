@@ -1,0 +1,120 @@
+{
+  "deletionLogs": [
+    {
+      "clusterId": 1,
+      "productName": "Walkaroo BX1256",
+      "deletedImageId": "f7ea3e2e-cbc0-49ef-9c60-3d5fbf4d8cd2",
+      "deletedVariantId": "b65d4199-24da-4a1b-93a7-258b2533c0f0",
+      "deletedProductId": "d6040548-db22-4eaa-9aa4-01ab5f1ae245",
+      "timestamp": "2026-07-19T16:35:47.311Z"
+    },
+    {
+      "clusterId": 2,
+      "productName": "Walkaroo BX2554",
+      "deletedImageId": "7c01a168-acf0-4d75-9e2e-74e0d902476b",
+      "deletedVariantId": "06f8b334-9c35-466b-9df2-51fbf31b0c6c",
+      "deletedProductId": "06b0dd0c-2a0c-406b-be50-b7914ad00db5",
+      "timestamp": "2026-07-19T16:35:47.584Z"
+    },
+    {
+      "clusterId": 3,
+      "productName": "Walkaroo BX1967",
+      "deletedImageId": "0a07eb3e-1bcd-4aa5-825c-daca88c951cf",
+      "deletedVariantId": "608d0d45-799a-428c-859c-9b70bdfcaee0",
+      "deletedProductId": "fba9196a-c0aa-42b8-87eb-d4e0c1cc4bff",
+      "timestamp": "2026-07-19T16:35:47.831Z"
+    },
+    {
+      "clusterId": 4,
+      "productName": "Walkaroo 17146",
+      "deletedImageId": "8837b1b5-b7f7-42b6-bea3-34d8d437b172",
+      "deletedVariantId": "4eb0a232-82bc-4185-8e58-0243a6e6a91a",
+      "deletedProductId": "03995e95-44b8-4458-8782-cdd6b4452656",
+      "timestamp": "2026-07-19T16:35:48.085Z"
+    },
+    {
+      "clusterId": 5,
+      "productName": "Walkaroo WF6255",
+      "deletedImageId": "bf097a10-6215-4b79-892c-9323bf709207",
+      "deletedVariantId": "5feeeca2-5dad-4dfc-9ef0-27d995e33253",
+      "deletedProductId": "81330ea7-db7d-4f41-b80d-bcbc5c19cab4",
+      "timestamp": "2026-07-19T16:35:48.340Z"
+    },
+    {
+      "clusterId": 6,
+      "productName": "Walkaroo WGP53440",
+      "deletedImageId": "2dede40a-cbef-41a0-822e-cbbe990436f4",
+      "deletedVariantId": "a93045b0-c547-47c2-a039-31082ea53061",
+      "deletedProductId": "c9392cde-c560-425b-b48d-92a069193b4a",
+      "timestamp": "2026-07-19T16:35:48.601Z"
+    },
+    {
+      "clusterId": 7,
+      "productName": "Walkaroo WL7673",
+      "deletedImageId": "d159cca9-129f-4f79-b757-775b3adaf09f",
+      "deletedVariantId": "d2b371d4-6f82-4be5-b9e6-8360be3600d5",
+      "deletedProductId": "199377d2-3bec-40fa-9e27-395e8b057376",
+      "timestamp": "2026-07-19T16:35:48.893Z"
+    },
+    {
+      "clusterId": 8,
+      "productName": "Walkaroo WLR72017",
+      "deletedImageId": "cacfc21b-d609-4321-833c-f41a389f1e03",
+      "deletedVariantId": "822703cb-8529-43e4-b9c0-f45a1f8af3de",
+      "deletedProductId": "3fd1de1e-218e-4f56-8873-51de22b8b6a0",
+      "timestamp": "2026-07-19T16:35:49.156Z"
+    },
+    {
+      "clusterId": 9,
+      "productName": "Walkaroo WLR72042",
+      "deletedImageId": "a8241118-6d6a-40aa-b85b-8d9dda1408a2",
+      "deletedVariantId": "b984fee7-0eaf-4dcf-82d3-05c7adf61add",
+      "deletedProductId": "2a37c7f8-dcd7-429b-b156-461d30a1b39f",
+      "timestamp": "2026-07-19T16:35:49.575Z"
+    }
+  ],
+  "finalImagesCount": 213,
+  "finalProductsCount": 213,
+  "verifiedSamples": [
+    {
+      "id": "90f3d819-7d83-4b92-92b4-e530f43a22a5",
+      "name": "Walkaroo BX1256",
+      "status": "published",
+      "price": 250,
+      "hasValidImage": true,
+      "payloadLength": 86975
+    },
+    {
+      "id": "c87164f7-f889-4e59-82fd-7ce7072b9c2f",
+      "name": "Walkaroo BX2554",
+      "status": "published",
+      "price": 299,
+      "hasValidImage": true,
+      "payloadLength": 72075
+    },
+    {
+      "id": "dc8c0a81-4d61-467c-ad06-94ad803e64a7",
+      "name": "Walkaroo BX1967",
+      "status": "published",
+      "price": 319,
+      "hasValidImage": true,
+      "payloadLength": 107691
+    },
+    {
+      "id": "dc98639f-e4a6-4e37-a723-a5e57a71efaa",
+      "name": "Walkaroo 17146",
+      "status": "published",
+      "price": 719,
+      "hasValidImage": true,
+      "payloadLength": 69583
+    },
+    {
+      "id": "346297b5-6d2d-47b0-adf4-fcd6ceb9e997",
+      "name": "Walkaroo WF6255",
+      "status": "published",
+      "price": 829,
+      "hasValidImage": true,
+      "payloadLength": 80839
+    }
+  ]
+}
