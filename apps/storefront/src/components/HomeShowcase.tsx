@@ -48,6 +48,27 @@ export function HomeShowcase({
   onNavigate,
   onCategoryChip,
 }: HomeShowcaseProps) {
+  // Dynamic Fisher-Yates Shuffling for fresh user experience
+  const shuffledNewArrivals = React.useMemo(() => {
+    if (!newArrivals || newArrivals.length === 0) return [];
+    const arr = [...newArrivals];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }, [newArrivals]);
+
+  const shuffledBestPicks = React.useMemo(() => {
+    if (!bestPicks || bestPicks.length === 0) return [];
+    const arr = [...bestPicks];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }, [bestPicks]);
+
   // Catalog Spotlight auto-swiping state from actual published products
   const spotlightProducts = React.useMemo(() => {
     const combined = [...newArrivals, ...bestPicks];
@@ -87,12 +108,6 @@ export function HomeShowcase({
       setIsFading(false);
     }, 150);
   };
-
-  const currentSpotlight = spotlightProducts[spotlightIndex % spotlightProducts.length];
-  const spotlightImgUrl = currentSpotlight ? getProductImageUrl(currentSpotlight) : null;
-  const currentDiscountPct = currentSpotlight && currentSpotlight.mrp && currentSpotlight.mrp > currentSpotlight.offer_price
-    ? Math.round((1 - currentSpotlight.offer_price / currentSpotlight.mrp) * 100)
-    : 0;
 
   return (
     <div className="home-showcase">
@@ -187,73 +202,23 @@ export function HomeShowcase({
                       ? Math.round((1 - product.offer_price / product.mrp) * 100) : 0;
                     const absOffset = Math.abs(offset);
 
-                    // 3D position math
-                    const rotateY  = offset * 38;           // deg
-                    const translateX = offset * 58;         // %
-                    const translateZ = absOffset === 0 ? 80 : absOffset === 1 ? 0 : -100; // px
-                    const scale    = absOffset === 0 ? 1 : absOffset === 1 ? 0.82 : 0.64;
-                    const opacity  = absOffset === 0 ? 1 : absOffset === 1 ? 0.72 : 0.38;
-                    const zIndex   = 10 - absOffset * 3;
-
                     return (
                       <div
                         key={`${idx}-${offset}`}
-                        className={`coverflow-card ${offset === 0 ? 'active' : ''}`}
-                        style={{
-                          transform: `translateX(${translateX}%) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`,
-                          opacity,
-                          zIndex,
-                          cursor: offset === 0 ? 'pointer' : 'pointer',
-                        }}
-                        onClick={() => {
-                          if (offset === 0) {
-                            onOpenProduct(product);
-                          } else {
-                            setSpotlightIndex(idx);
-                          }
-                        }}
+                        className={`coverflow-item ${offset === 0 ? 'center' : ''}`}
+                        onClick={() => onOpenProduct(product)}
                       >
-                        {/* Discount Badge */}
-                        {discPct > 0 && (
-                          <div className="coverflow-badge">
-                            <Sparkles size={11} />
-                            <span>{discPct}% OFF</span>
-                          </div>
+                        {imgUrl ? (
+                          <img src={imgUrl} alt={product.name} className="coverflow-img" loading="lazy" />
+                        ) : (
+                          <div className="coverflow-fallback">VijayaSri</div>
                         )}
-
-                        {/* Image */}
-                        <div className="coverflow-img-wrap">
-                          <img
-                            src={imgUrl || '/hero_red_black.png'}
-                            alt={product.name}
-                            className="coverflow-img"
-                            draggable={false}
-                          />
+                        {discPct > 0 && <span className="coverflow-badge">{discPct}% OFF</span>}
+                        <div className="coverflow-info">
+                          <span className="brand">{product.brandName || 'VijayaSri'}</span>
+                          <h4 className="title">{product.name}</h4>
+                          <span className="price">₹{product.offer_price}</span>
                         </div>
-
-                        {/* Info — only on center card */}
-                        {offset === 0 && (
-                          <div className="coverflow-info">
-                            <div className="coverflow-title-row">
-                              <h4 className="coverflow-name">{product.name}</h4>
-                              <div className="coverflow-price-box">
-                                <span className="coverflow-price">₹{product.offer_price}</span>
-                                {product.mrp && product.mrp > product.offer_price && (
-                                  <span className="coverflow-mrp">₹{product.mrp}</span>
-                                )}
-                              </div>
-                            </div>
-                            <p className="coverflow-sub">
-                              {product.brandName || 'VijayaSri'} · {product.gender ? `${product.gender}'s` : ''} {product.category}
-                            </p>
-                            <div className="coverflow-footer">
-                              <span className="store-availability-tag">
-                                <CheckCircle2 size={12} /> Try in store &amp; buy
-                              </span>
-                              <span className="coverflow-view-btn">View Details →</span>
-                            </div>
-                          </div>
-                        )}
                       </div>
                     );
                   })}
@@ -311,8 +276,73 @@ export function HomeShowcase({
         </div>
       </div>
 
-      {/* ── Trust bar ────────────────────────────────────────── */}
-      <div className="container vsf-trust-bar">
+      {/* ── Product carousels (Dynamically randomized for fresh user recommendations) ─── */}
+      <div className="container home-carousels">
+        <ProductCarousel
+          title="New Arrivals"
+          subtitle="Fresh uploads & recommended picks from our catalog"
+          products={shuffledNewArrivals}
+          presentationSettings={presentationSettings}
+          favorites={favorites}
+          onToggleFavorite={onToggleFavorite}
+          onOpen={onOpenProduct}
+          onWhatsApp={onWhatsApp}
+          onViewAll={onBrowseNew}
+        />
+
+        <ProductCarousel
+          title="Best Picks & Trending"
+          subtitle="Popular footwear across Walkaroo, Paragon & VKC"
+          products={shuffledBestPicks}
+          presentationSettings={presentationSettings}
+          favorites={favorites}
+          onToggleFavorite={onToggleFavorite}
+          onOpen={onOpenProduct}
+          onWhatsApp={onWhatsApp}
+          onViewAll={() =>
+            document.getElementById('catalog-view')?.scrollIntoView({ behavior: 'smooth' })
+          }
+        />
+      </div>
+
+      {/* ── About VijayaSri Footwear & Top Brands Section (Moved to Bottom) ───────── */}
+      <div className="container vsf-about-brands-section" style={{ margin: '3rem auto 1.5rem auto', padding: '2rem 1.5rem', background: '#09090b', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.08)' }}>
+        <div style={{ textAlign: 'center', maxWidth: '750px', margin: '0 auto 1.75rem auto' }}>
+          <span style={{ fontSize: '0.75rem', color: '#DC2626', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', display: 'block', marginBottom: '0.4rem' }}>
+            15+ Years Serving Ayyempettai &amp; Thanjavur
+          </span>
+          <h2 style={{ fontSize: '1.6rem', color: '#FFFFFF', fontWeight: 800, fontFamily: 'var(--font-display)', marginBottom: '0.75rem' }}>
+            About VijayaSri Footwear
+          </h2>
+          <p style={{ color: '#A1A1AA', fontSize: '0.9rem', lineHeight: 1.6 }}>
+            Established in Main Road, Ayyempettai, VijayaSri Footwear is your premier family footwear showroom. We bring you 100% genuine slippers, sandals, formal shoes, and sports footwear from India’s leading trusted brands. Try before you buy at our showroom or order directly via WhatsApp!
+          </p>
+        </div>
+
+        {/* Leading Brands Grid Badges */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', justifyContent: 'center', alignItems: 'center' }}>
+          {['Walkaroo', 'Paragon', 'VKC Pride', 'Sparx', 'Campus', 'Bata', 'Liberty', 'Action', 'Relaxo'].map(brand => (
+            <div key={brand} style={{
+              background: 'rgba(255, 255, 255, 0.05)',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
+              color: '#FFFFFF',
+              fontSize: '0.82rem',
+              fontWeight: 700,
+              padding: '0.5rem 1rem',
+              borderRadius: '999px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.4rem'
+            }}>
+              <CheckCircle2 size={14} color="#DC2626" />
+              {brand}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Quick Info Trust Bar (Moved to the Very Bottom) ────────────────── */}
+      <div className="container vsf-trust-bar" style={{ marginTop: '1rem', marginBottom: '2rem' }}>
         <div className="vsf-trust-grid">
           <a href={storeTelUrl()} className="vsf-trust-item">
             <span className="vsf-trust-icon"><Phone size={18} /></span>
@@ -353,37 +383,6 @@ export function HomeShowcase({
             </div>
           </div>
         </div>
-      </div>
-
-
-
-      {/* ── Product carousels ─────────────────────────────────── */}
-      <div className="container home-carousels">
-        <ProductCarousel
-          title="New Arrivals"
-          subtitle="Fresh uploads from our latest catalog"
-          products={newArrivals}
-          presentationSettings={presentationSettings}
-          favorites={favorites}
-          onToggleFavorite={onToggleFavorite}
-          onOpen={onOpenProduct}
-          onWhatsApp={onWhatsApp}
-          onViewAll={onBrowseNew}
-        />
-
-        <ProductCarousel
-          title="Best Picks"
-          subtitle="Top styles across slippers, shoes &amp; sandals"
-          products={bestPicks}
-          presentationSettings={presentationSettings}
-          favorites={favorites}
-          onToggleFavorite={onToggleFavorite}
-          onOpen={onOpenProduct}
-          onWhatsApp={onWhatsApp}
-          onViewAll={() =>
-            document.getElementById('catalog-view')?.scrollIntoView({ behavior: 'smooth' })
-          }
-        />
       </div>
     </div>
   );
