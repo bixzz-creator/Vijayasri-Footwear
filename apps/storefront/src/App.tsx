@@ -49,6 +49,9 @@ import {
   MessageSquare,
   QrCode,
   Phone,
+  PhoneCall,
+  MessageCircle,
+  MapPin,
   RefreshCw,
   ShieldCheck,
   Ruler,
@@ -1520,7 +1523,120 @@ export default function App() {
           </div>
         </div>
 
+        {/* Contact & Direct Enquiry Banner (Directly after Customer Reviews) */}
+        <div style={{
+          background: 'linear-gradient(135deg, #09090b 0%, #18181b 100%)',
+          borderRadius: '20px',
+          padding: '2.5rem 1.75rem',
+          border: '1px solid rgba(220, 38, 38, 0.3)',
+          boxShadow: '0 20px 40px rgba(0,0,0,0.5)',
+          color: '#FFFFFF',
+          textAlign: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '1.5rem',
+          margin: '0.5rem 0'
+        }}>
+          <div style={{ maxWidth: '650px' }}>
+            <span style={{ fontSize: '0.75rem', color: '#DC2626', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '0.5rem' }}>
+              DIRECT STORE ASSISTANCE & ENQUIRIES
+            </span>
+            <h3 style={{ fontSize: '1.75rem', fontFamily: 'var(--font-display)', fontWeight: 800, marginBottom: '0.75rem', color: '#FFFFFF' }}>
+              Have Questions or Need Help? Talk to Us Directly!
+            </h3>
+            <p style={{ color: '#D4D4D8', fontSize: '0.92rem', lineHeight: 1.6, margin: '0 auto' }}>
+              Check product availability, request size recommendations, or get directions to our showroom in <strong>Ayyampettai, Thanjavur</strong>. We respond instantly!
+            </p>
+          </div>
 
+          {/* Action Callouts Grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem', width: '100%', maxWidth: '850px' }}>
+            
+            {/* WhatsApp Card */}
+            <a
+              href={storeWhatsAppUrl('Hi VijayaSri Footwear! I want to enquire about size and product availability.')}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                backgroundColor: '#25D366',
+                color: '#000000',
+                borderRadius: '14px',
+                padding: '1.25rem 1rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.85rem',
+                textDecoration: 'none',
+                fontWeight: 800,
+                boxShadow: '0 8px 20px rgba(37, 211, 102, 0.25)',
+                transition: 'transform 0.2s ease',
+              }}
+            >
+              <div style={{ background: 'rgba(0,0,0,0.12)', padding: '0.6rem', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <MessageCircle size={22} color="#000000" />
+              </div>
+              <div style={{ textAlign: 'left' }}>
+                <span style={{ fontSize: '0.95rem', display: 'block', lineHeight: 1.2 }}>WhatsApp Enquiry</span>
+                <span style={{ fontSize: '0.72rem', fontWeight: 600, opacity: 0.85 }}>Instant Response &amp; Size Check</span>
+              </div>
+            </a>
+
+            {/* Phone Call Card */}
+            <a
+              href={storeTelUrl()}
+              style={{
+                backgroundColor: '#FFFFFF',
+                color: '#000000',
+                borderRadius: '14px',
+                padding: '1.25rem 1rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.85rem',
+                textDecoration: 'none',
+                fontWeight: 800,
+                boxShadow: '0 8px 20px rgba(255,255,255,0.15)',
+                transition: 'transform 0.2s ease',
+              }}
+            >
+              <div style={{ background: 'rgba(220, 38, 38, 0.12)', padding: '0.6rem', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <PhoneCall size={22} color="#DC2626" />
+              </div>
+              <div style={{ textAlign: 'left' }}>
+                <span style={{ fontSize: '0.95rem', display: 'block', lineHeight: 1.2 }}>Call Store Directly</span>
+                <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#4B5563' }}>+91 83000 29513 (Mon–Sat)</span>
+              </div>
+            </a>
+
+            {/* Visit Showroom / Map Card */}
+            <a
+              href="https://maps.app.goo.gl/sFiiKYZr3kuwnfHT6"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.07)',
+                color: '#FFFFFF',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                borderRadius: '14px',
+                padding: '1.25rem 1rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.85rem',
+                textDecoration: 'none',
+                fontWeight: 800,
+                transition: 'transform 0.2s ease',
+              }}
+            >
+              <div style={{ background: 'rgba(255,255,255,0.12)', padding: '0.6rem', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <MapPin size={22} color="#FFFFFF" />
+              </div>
+              <div style={{ textAlign: 'left' }}>
+                <span style={{ fontSize: '0.95rem', display: 'block', lineHeight: 1.2 }}>Visit Showroom</span>
+                <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#A1A1AA' }}>Ayyampettai, Thanjavur</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
 
         <FaqSection />
       </section>
