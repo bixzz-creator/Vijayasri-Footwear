@@ -9,6 +9,11 @@
   "scripts": {
     "dev": "npm run dev --workspaces --if-present",
     "build": "npm run build --workspaces --if-present",
+    "build:storefront": "npm run build --workspace=@vijayasri/storefront",
+    "build:admin": "npm run build --workspace=@vijayasri/admin",
+    "deploy": "npx wrangler pages deploy apps/storefront/dist --project-name=vijayasri-footwear",
+    "deploy:storefront": "npx wrangler pages deploy apps/storefront/dist --project-name=vijayasri-footwear",
+    "deploy:admin": "npx wrangler pages deploy apps/admin/dist --project-name=vijayasri-admin",
     "tsc": "npm run tsc --workspaces --if-present",
     "rename-slippers": "node scripts/rename-slipper-photos.mjs",
     "rename-slippers:dry": "node scripts/rename-slipper-photos.mjs --dry-run",
