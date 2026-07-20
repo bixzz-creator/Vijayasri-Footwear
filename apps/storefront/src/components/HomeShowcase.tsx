@@ -48,6 +48,27 @@ export function HomeShowcase({
   onNavigate,
   onCategoryChip,
 }: HomeShowcaseProps) {
+  // Randomize product ordering for New Arrivals & Best Picks per session
+  const shuffledNewArrivals = React.useMemo(() => {
+    if (!newArrivals || newArrivals.length === 0) return [];
+    const arr = [...newArrivals];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }, [newArrivals]);
+
+  const shuffledBestPicks = React.useMemo(() => {
+    if (!bestPicks || bestPicks.length === 0) return [];
+    const arr = [...bestPicks];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }, [bestPicks]);
+
   // Catalog Spotlight auto-swiping state from actual published products
   const spotlightProducts = React.useMemo(() => {
     const combined = [...newArrivals, ...bestPicks];
@@ -362,7 +383,7 @@ export function HomeShowcase({
         <ProductCarousel
           title="New Arrivals"
           subtitle="Fresh uploads from our latest catalog"
-          products={newArrivals}
+          products={shuffledNewArrivals}
           presentationSettings={presentationSettings}
           favorites={favorites}
           onToggleFavorite={onToggleFavorite}
@@ -374,7 +395,7 @@ export function HomeShowcase({
         <ProductCarousel
           title="Best Picks"
           subtitle="Top styles across slippers, shoes &amp; sandals"
-          products={bestPicks}
+          products={shuffledBestPicks}
           presentationSettings={presentationSettings}
           favorites={favorites}
           onToggleFavorite={onToggleFavorite}
