@@ -54,6 +54,9 @@ import {
   Ruler,
 } from 'lucide-react';
 import '@vijayasri/ui';
+import { useSEO } from './hooks/useSEO';
+import { StructuredData } from './components/StructuredData';
+import { NotFoundPage } from './components/NotFoundPage';
 
 export default function App() {
   const [products, setProducts] = useState<any[]>([]);
@@ -79,6 +82,16 @@ export default function App() {
   const [sidebarHidden, setSidebarHidden] = useState(false);
   const [_layout, _setLayout] = useState<any>(null);
   const [festivalMode, setFestivalMode] = useState<string>('normal');
+  const [show404, setShow404] = useState(false);
+
+  // ─── Dynamic SEO — updates title, canonical, OG tags on every view change ─
+  useSEO({
+    product: selectedProduct,
+    category: selectedCategory !== 'All' ? selectedCategory : undefined,
+    brand: selectedBrand !== 'All' ? selectedBrand : undefined,
+    searchQuery: searchInput || undefined,
+    is404: show404,
+  });
 
   // ─── Apple-grade Lenis smooth scroll ────────────────────────────────────
   const lenisRef = useRef<any>(null);
@@ -758,8 +771,20 @@ export default function App() {
   return (
     <div className="storefront-app">
 
+      {/* JSON-LD Structured Data — Organization, LocalBusiness, WebSite, Product */}
+      <StructuredData
+        product={selectedProduct}
+        category={selectedCategory !== 'All' ? selectedCategory : undefined}
+        products={filteredProducts}
+      />
+
+      {/* 404 Page */}
+      {show404 && (
+        <NotFoundPage onGoHome={() => { setShow404(false); setSelectedProduct(null); }} />
+      )}
+
       {/* Festival Banner Header */}
-      {festivalMode !== 'normal' && (
+      {!show404 && festivalMode !== 'normal' && (
         <div style={{
           backgroundColor: '#DC2626',
           color: '#FFFFFF',

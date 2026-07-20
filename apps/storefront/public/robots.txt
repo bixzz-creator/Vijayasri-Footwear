@@ -1,0 +1,22 @@
+# VijayaSri Footwear — robots.txt
+# https://vijayasri-footwear.pages.dev
+
+User-agent: *
+Allow: /
+
+# Block admin and private routes
+Disallow: /admin
+Disallow: /admin/
+Disallow: /*.json$
+
+# Allow critical assets
+Allow: /manifest.json
+Allow: /sitemap.xml
+Allow: /logo.png
+Allow: /shop-front.jpg
+
+# Crawl delay for polite crawling
+Crawl-delay: 2
+
+# Sitemaps
+Sitemap: https://vijayasri-footwear.pages.dev/sitemap.xml

@@ -11,6 +11,8 @@
     "build": "npm run build --workspaces --if-present",
     "build:storefront": "npm run build --workspace=@vijayasri/storefront",
     "build:admin": "npm run build --workspace=@vijayasri/admin",
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "prebuild": "node scripts/generate-sitemap.mjs || echo 'Sitemap generation skipped'",
     "deploy": "npx wrangler pages deploy apps/storefront/dist --project-name=vijayasri-footwear",
     "deploy:storefront": "npx wrangler pages deploy apps/storefront/dist --project-name=vijayasri-footwear",
     "deploy:admin": "npx wrangler pages deploy apps/admin/dist --project-name=vijayasri-admin",

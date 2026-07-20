@@ -1,21 +1,58 @@
 {
   "short_name": "VijayaSri",
-  "name": "VijayaSri Footwear Catalog",
+  "name": "VijayaSri Footwear",
+  "description": "Browse slippers, sandals & shoes from top brands. Ayyempettai, Thanjavur showroom.",
+  "lang": "en-IN",
+  "categories": ["shopping", "lifestyle"],
   "icons": [
     {
-      "src": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=192&auto=format&fit=crop&q=80",
+      "src": "/logo.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
-      "src": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=512&auto=format&fit=crop&q=80",
+      "src": "/logo.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/shop-front.jpg",
+      "type": "image/jpeg",
+      "sizes": "800x600",
+      "form_factor": "wide",
+      "label": "VijayaSri Footwear Showroom — Ayyempettai, Thanjavur"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Browse Slippers",
+      "short_name": "Slippers",
+      "url": "/?category=slippers",
+      "icons": [{ "src": "/logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Browse Sandals",
+      "short_name": "Sandals",
+      "url": "/?category=sandals",
+      "icons": [{ "src": "/logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Call Store",
+      "short_name": "Call",
+      "url": "tel:+918300029513",
+      "icons": [{ "src": "/logo.png", "sizes": "96x96" }]
     }
   ],
   "start_url": "/",
-  "background_color": "#f9fafb",
-  "theme_color": "#10b981",
+  "scope": "/",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0f",
+  "theme_color": "#DC2626",
+  "prefer_related_applications": false,
+  "related_applications": []
 }

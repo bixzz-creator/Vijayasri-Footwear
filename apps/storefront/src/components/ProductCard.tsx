@@ -84,9 +84,10 @@ export function ProductCard({
   const pricing = getStorefrontPricing(product, presentationSettings);
   const { displayMrp, sellingPrice, showDiscount } = pricing;
   const label = getProductLabel(product, presentationSettings);
+  const variantColor = product.variants?.[0]?.color;
   const alt =
     product.ai_analysis_details?.presentation?.seoImageAlt ||
-    `${product.brandName || ''} ${product.name}`.trim();
+    `${product.brandName || ''} ${product.name}${variantColor ? ` in ${variantColor}` : ''} — ${product.category || 'footwear'} | VijayaSri Footwear Thanjavur`.trim();
 
   // Discount percentage
   const discountPct = showDiscount && displayMrp > sellingPrice
@@ -145,13 +146,15 @@ export function ProductCard({
               src={imageUrl}
               alt={alt}
               loading="lazy"
+              decoding="async"
               onLoad={() => setImgLoaded(true)}
               onError={() => setImgError(true)}
               className={`product-img-progressive ${imgLoaded ? 'loaded' : 'loading'} ${hovered ? 'hovered' : ''}`}
+              style={{ contentVisibility: 'auto' }}
             />
           ) : (
             <div className="nike-product-no-image brand-fallback">
-              <img src="/logo.png" alt="VijayaSri Footwear" className="fallback-logo-img" />
+              <img src="/logo.png" alt="VijayaSri Footwear — Ayyempettai, Thanjavur" className="fallback-logo-img" loading="lazy" decoding="async" />
               <span>VijayaSri Footwear</span>
             </div>
           )}
@@ -196,7 +199,7 @@ export function ProductCard({
         <button type="button" className="nike-product-wishlist" onClick={onToggleFavorite}>
           <Heart size={22} fill={isFavorite ? '#DC2626' : 'none'} />
         </button>
-        {imageUrl ? <img src={imageUrl} alt={alt} loading="lazy" /> : <div className="nike-product-no-image">No Image</div>}
+        {imageUrl ? <img src={imageUrl} alt={alt} loading="lazy" decoding="async" /> : <div className="nike-product-no-image">No Image</div>}
       </div>
       <div className="nike-product-info">
         <h4 className="nike-product-name">{product.name}</h4>
