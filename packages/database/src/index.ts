@@ -41,10 +41,27 @@ class DatabaseService {
     return this.readyPromise;
   }
 
-  async init(passcode?: string): Promise<{ demoMode: boolean }> {
+  async init(passcode?: string, customUrl?: string, customKey?: string): Promise<{ demoMode: boolean }> {
     this.cachedBranchId = null; // reset cached branch ID on re-init
     await this.ensureReady();
     
+    // Check custom params or environment variables first
+    const envUrl = cleanUrlValue(customUrl || (typeof import.meta !== 'undefined' ? (import.meta as any).env?.VITE_SUPABASE_URL : undefined));
+    const envKey = cleanHeaderValue(customKey || (typeof import.meta !== 'undefined' ? (import.meta as any).env?.VITE_SUPABASE_ANON_KEY : undefined));
+
+    if (envUrl && envKey && envUrl.startsWith('http')) {
+      this.client = createClient(envUrl, envKey, {
+        auth: {
+          persistSession: false,
+          autoRefreshToken: false,
+          detectSessionInUrl: false,
+        },
+      });
+      this.isDemoMode = false;
+      console.log('[Database] Connected to live Supabase database via env variables');
+      return { demoMode: false };
+    }
+
     if (!passcode) {
       this.isDemoMode = true;
       return { demoMode: true };
