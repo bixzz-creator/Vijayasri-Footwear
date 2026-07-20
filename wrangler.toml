@@ -1,5 +1,0 @@
-name = "vijayasri-footwear"
-pages_build_output_dir = "apps/storefront/dist"
-
-[build]
-command = "npm run build:storefront"
