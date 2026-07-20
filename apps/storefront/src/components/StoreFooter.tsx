@@ -66,11 +66,11 @@ export function StoreFooter({ onNavigate }: StoreFooterProps) {
         </div>
 
         <div>
-          <h5>Customer Care</h5>
+          <h5>Customer Care &amp; Policies</h5>
           <ul>
-            <li><button type="button" onClick={() => onNavigate('faq')}>FAQ</button></li>
-            <li><a href="#faq">Size Guide</a></li>
-            <li><a href="#faq">Exchange Policy</a></li>
+            <li><button type="button" onClick={() => onNavigate('faq')}>FAQ &amp; Store Information</button></li>
+            <li><a href="#faq" onClick={(e) => { e.preventDefault(); alert('VijayaSri Footwear Policy:\n\n• Try & Buy at Showroom (Main Road, Ayyempettai)\n• 7-Day In-Store Size Exchange with Receipt\n• Direct WhatsApp & Call Enquiry\n• 100% Genuine Brand Guarantee (Walkaroo, Paragon, VKC)'); }}>Exchange &amp; Try-Buy Policy</a></li>
+            <li><a href="#privacy" onClick={(e) => { e.preventDefault(); alert('VijayaSri Footwear Privacy Policy:\n\nWe respect your privacy. Phone numbers and WhatsApp messages sent to VijayaSri Footwear are used strictly for customer support and order inquiries.'); }}>Privacy &amp; Security Policy</a></li>
             <li>
               <a href={storeWhatsAppUrl()} target="_blank" rel="noopener noreferrer">
                 WhatsApp Enquiry
